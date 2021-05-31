@@ -4,12 +4,10 @@ import (
 	"encoding/hex"
 	"encoding/json"
 
-	_ "epik-auth/bls" // enable bls signatures
-
 	"github.com/EpiK-Protocol/go-epik/chain/types"
 	"github.com/EpiK-Protocol/go-epik/lib/sigs"
 	"github.com/filecoin-project/go-address"
-	"github.com/filecoin-project/specs-actors/actors/crypto"
+	"github.com/filecoin-project/go-state-types/crypto"
 )
 
 func Sign(plain []byte, epikWalletPrivateKey string) (signature []byte, addr address.Address, err error) {

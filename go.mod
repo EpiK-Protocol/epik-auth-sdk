@@ -1,16 +1,14 @@
-module epik-auth
+module github.com/EpiK-Protocol/epik-auth-sdk
 
 go 1.16
 
 require (
-	github.com/EpiK-Protocol/go-epik v0.4.2-0.20201026070559-b048e96c9753
-	github.com/filecoin-project/go-address v0.0.3
+	github.com/EpiK-Protocol/go-epik v0.4.2-0.20210530114614-689ada0d7b94
+	github.com/filecoin-project/go-address v0.0.5
 	github.com/filecoin-project/go-state-types v0.1.0
-	github.com/filecoin-project/specs-actors v0.6.2-0.20200724193152-534b25bdca30
 	github.com/shirou/gopsutil v2.20.5+incompatible // indirect
-	github.com/supranational/blst v0.1.1
-	golang.org/x/crypto v0.0.0-20200820211705-5c72a883971a // indirect
-	golang.org/x/net v0.0.0-20200822124328-c89045814202 // indirect
-	golang.org/x/sys v0.0.0-20200824131525-c12d262b63d8 // indirect
-	golang.org/x/text v0.3.3 // indirect
+	golang.org/x/lint v0.0.0-20200302205851-738671d3881b // indirect
+	honnef.co/go/tools v0.0.1-2020.1.3 // indirect
 )
+
+replace github.com/filecoin-project/specs-actors/v2 => github.com/EpiK-Protocol/go-epik-actors/v2 v2.4.0-alpha.0.20210517033919-7cac385c0096
