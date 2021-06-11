@@ -45,9 +45,7 @@ func Sign(plain []byte, epikWalletPrivateKey string) (signature []byte, addr add
 }
 
 func Verify(plain, signature []byte, addr address.Address) (err error) {
-	sig := &crypto.Signature{
-		Type: crypto.SigTypeBLS,
-		Data: signature,
-	}
-	return sigs.Verify(sig, addr, plain)
+	epiksig := &crypto.Signature{}
+	epiksig.UnmarshalBinary(signature)
+	return sigs.Verify(epiksig, addr, plain)
 }
