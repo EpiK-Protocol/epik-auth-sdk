@@ -4,6 +4,7 @@ import (
 	"encoding/hex"
 	"encoding/json"
 
+	_ "github.com/EpiK-Protocol/epik-auth-sdk/bls" // enable bls signatures
 	"github.com/EpiK-Protocol/go-epik/chain/types"
 	"github.com/EpiK-Protocol/go-epik/lib/sigs"
 	"github.com/filecoin-project/go-address"
