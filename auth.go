@@ -1,4 +1,4 @@
-package main
+package epikauth
 
 import (
 	"encoding/hex"
